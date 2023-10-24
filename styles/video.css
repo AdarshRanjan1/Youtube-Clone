@@ -1,9 +1,28 @@
 .video-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 40px;
 }
+
+@media (max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width:999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .video-preview{
   width: 100%;
 }
@@ -34,9 +53,7 @@
 }
 .tooltip-channel-pic{
   display: flex;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
+  border: 1px solid white;
   background-color: white;
   width: 190px;
   padding: 15px;
