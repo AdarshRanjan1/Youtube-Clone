@@ -77,7 +77,6 @@
 .search-btn .tooltip,
 .voice-btn .tooltip,
 .create-container .tooltip{
-  font-family: Roboto, Arial;
   font-size: 14px;
   position: absolute;
   background-color: gray;
